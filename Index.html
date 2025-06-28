@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SunCyberTech - Web Development, App Development, and Digital Marketing Services">
+  <title>SunCyberTech | Your Digital Growth Partner</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    #hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    .btn-primary {
+      background-color: #f7971e;
+      border-color: #f7971e;
+    }
+    .btn-primary:hover {
+      background-color: #ff5722;
+      border-color: #ff5722;
+    }
+    section {
+      padding: 60px 0;
+    }
+    #services h4, #portfolio h4, #blog h4 {
+      color: #0d6efd;
+    }
+    footer {
+      background-color: #212529;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SunCyberTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- Hero Section -->  <header class="text-center p-5" id="hero">
+    <h1 class="display-4">Empowering Your Digital Journey</h1>
+    <p class="lead">Web, Mobile & Marketing Solutions to Accelerate Your Business</p>
+    <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+  </header>  <!-- Services Section -->  <section id="services" class="text-center">
+    <div class="container">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4>Web Development</h4>
+          <p>Responsive and SEO-friendly websites tailored for your business.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>App Development</h4>
+          <p>Custom Android/iOS applications with beautiful UI and strong backend.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Digital Marketing</h4>
+          <p>Get found online with smart SEO and social media strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Portfolio Section -->  <section id="portfolio" class="bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Project Portfolio</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4><a href="https://smileytravels.net" target="_blank">Smiley Travels</a></h4>
+          <p>Travel booking platform with trip packages and contact support.</p>
+        </div>
+        <div class="col-md-4">
+          <h4><a href="https://mariseptictankcleaning.com" target="_blank">Mari Septic Tank Cleaning</a></h4>
+          <p>Service booking site for septic tank cleaning with contact and location features.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>SEO Project</h4>
+          <p>SEO Optimization for local business, boosted organic traffic by 300%.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Blog Section -->  <section id="blog" class="text-center">
+    <div class="container">
+      <h2 class="mb-4">Latest Blog Posts</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h4>5 Tips to Improve Your Website</h4>
+          <p>Boost conversions and SEO with modern design strategies.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Top 10 Tools for Digital Marketing</h4>
+          <p>Explore essential tools for better traffic and engagement.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Why Mobile Apps Matter in 2025</h4>
+          <p>Understand how apps can scale your business and retain users.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Admin Panel Preview Section -->  <section id="admin" class="bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Admin Dashboard Preview</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h4>Total Users</h4>
+          <p><strong>125</strong> registered users</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Pending Messages</h4>
+          <p><strong>18</strong> unread contact requests</p>
+        </div>
+      </div>
+      <p class="mt-4">(Full admin panel with login, chart.js dashboard & blog controls can be developed in backend)</p>
+    </div>
+  </section>  <!-- About Section -->  <section id="about" class="bg-white">
+    <div class="container text-center">
+      <h2>About Us</h2>
+      <p class="lead">We are a team of passionate developers and marketers helping businesses grow with the power of technology.</p>
+    </div>
+  </section>  <!-- Contact Section -->  <section id="contact" class="text-center">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form class="row g-3 justify-content-center" onsubmit="return handleSubmit(event)">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="col-md-12">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>  <!-- Footer -->  <footer class="text-center py-3">
+    <p class="mb-0">&copy; 2025 SunCyberTech. All rights reserved.</p>
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert('Thank you for contacting us! We will get back to you shortly.');
+      event.target.reset();
+      return false;
+    }
+  </script></body>
+  </html>
