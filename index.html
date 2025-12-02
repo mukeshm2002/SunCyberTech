@@ -1,162 +1,171 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SunCyberTech - Web Development, App Development, and Digital Marketing Services">
-  <title>SunCyberTech | Your Digital Growth Partner</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <title>Mukesh Murugavel — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-    #hero {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #00308F, #005CFF, #00C6FF);
       color: #fff;
+      overflow-x: hidden;
     }
-    .btn-primary {
-      background-color: #f7971e;
-      border-color: #f7971e;
+    nav, section, footer {
+      background: rgba(255, 255, 255, 0.12) !important;
+      backdrop-filter: blur(8px);
+      border-radius: 14px;
+      color: #fff !important;
     }
-    .btn-primary:hover {
-      background-color: #ff5722;
-      border-color: #ff5722;
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: url('https://i.imgur.com/L9fVgqK.jpeg') no-repeat center/cover;
+      border-radius: 20px;
+      animation: fadeIn 2s ease-in-out;
     }
-    section {
-      padding: 60px 0;
+    .floating {
+      animation: float 4s ease-in-out infinite;
     }
-    #services h4, #portfolio h4, #blog h4 {
-      color: #0d6efd;
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
     }
-    footer {
-      background-color: #212529;
-      color: #fff;
+    .project-card {
+      border: 2px solid #ffffff55;
+      border-radius: 14px;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+    .badge-skill {
+      padding: 8px 14px;
+      background: #ffde59;
+      color: #000;
+      border-radius: 8px;
+      font-weight: 700;
+      display: inline-block;
+      margin: 4px;
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">SunCyberTech</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom animate__animated animate__fadeInDown">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Mukesh Murugavel</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </nav>  <!-- Hero Section -->  <header class="text-center p-5" id="hero">
-    <h1 class="display-4">Empowering Your Digital Journey</h1>
-    <p class="lead">Web, Mobile & Marketing Solutions to Accelerate Your Business</p>
-    <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
-  </header>  <!-- Services Section -->  <section id="services" class="text-center">
-    <div class="container">
-      <h2 class="mb-4">Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <h4>Web Development</h4>
-          <p>Responsive and SEO-friendly websites tailored for your business.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>App Development</h4>
-          <p>Custom Android/iOS applications with beautiful UI and strong backend.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Digital Marketing</h4>
-          <p>Get found online with smart SEO and social media strategies.</p>
+  </div>
+</nav>
+
+<header class="hero animate__animated animate__fadeIn">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-4 fw-bold animate__animated animate__fadeInUp">Hi, I'm <span class="text-warning">Mukesh Murugavel</span></h1>
+        <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Product-focused Java Developer — I build fast, scalable backend systems using Java, Spring Boot, and modern APIs.</p>
+        <div>
+          <a class="btn btn-warning btn-lg me-2 animate__animated animate__fadeInUp animate__delay-2s" href="#projects">Explore Projects</a>
+          <a class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp animate__delay-2s" href="#contact">Hire Me</a>
         </div>
       </div>
+      <div class="col-lg-5 text-center mt-4 floating">
+        <img src="https://i.imgur.com/Zq2OZzP.png" width="260" class="rounded-circle shadow-lg" />
+      </div>
     </div>
-  </section>  <!-- Portfolio Section -->  <section id="portfolio" class="bg-light text-center">
-    <div class="container">
-      <h2 class="mb-4">Project Portfolio</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <h4><a href="https://smileytravels.net" target="_blank">Smiley Travels</a></h4>
-          <p>Travel booking platform with trip packages and contact support.</p>
+  </div>
+</header>
+
+<section id="about" class="p-5 mt-4 animate__animated animate__fadeInUp">
+  <div class="container">
+    <h3 class="fw-bold">About Me</h3>
+    <p>I’m a Java & Spring Boot developer passionate about building backend-heavy applications with clean architecture, API-driven communication, and real-world problem solving.</p>
+  </div>
+</section>
+
+<section id="skills" class="p-5 mt-4 animate__animated animate__fadeInUp">
+  <div class="container">
+    <h3 class="fw-bold">Skills</h3>
+    <div class="mt-3">
+      <span class="badge-skill">Java</span>
+      <span class="badge-skill">Spring Boot</span>
+      <span class="badge-skill">REST API</span>
+      <span class="badge-skill">MySQL</span>
+      <span class="badge-skill">JPA / Hibernate</span>
+      <span class="badge-skill">HTML/CSS</span>
+      <span class="badge-skill">JavaScript</span>
+      <span class="badge-skill">Git</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="p-5 mt-4 animate__animated animate__fadeInUp">
+  <div class="container">
+    <h3 class="fw-bold mb-4">Projects</h3>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="project-card p-4">
+          <h4>Online Bus Reservation System</h4>
+          <p>A full-featured booking system with real-time seat availability and secure backend.</p>
         </div>
-        <div class="col-md-4">
-          <h4><a href="https://mariseptictankcleaning.com" target="_blank">Mari Septic Tank Cleaning</a></h4>
-          <p>Service booking site for septic tank cleaning with contact and location features.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>SEO Project</h4>
-          <p>SEO Optimization for local business, boosted organic traffic by 300%.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card p-4">
+          <h4>Employee Management System</h4>
+          <p>CRUD-based application with MVC architecture & layered backend.</p>
         </div>
       </div>
     </div>
-  </section>  <!-- Blog Section -->  <section id="blog" class="text-center">
-    <div class="container">
-      <h2 class="mb-4">Latest Blog Posts</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <h4>5 Tips to Improve Your Website</h4>
-          <p>Boost conversions and SEO with modern design strategies.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Top 10 Tools for Digital Marketing</h4>
-          <p>Explore essential tools for better traffic and engagement.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Why Mobile Apps Matter in 2025</h4>
-          <p>Understand how apps can scale your business and retain users.</p>
-        </div>
+  </div>
+</section>
+
+<section id="contact" class="p-5 mt-4 animate__animated animate__fadeInUp">
+  <div class="container">
+    <h3 class="fw-bold">Contact Me</h3>
+    <p>Send a message and it will be delivered directly to your email.</p>
+
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-ACCESS-KEY-HERE" />
+
+      <div class="mb-3">
+        <input class="form-control" type="text" name="name" placeholder="Your Name" required />
       </div>
-    </div>
-  </section>  <!-- Admin Panel Preview Section -->  <section id="admin" class="bg-light text-center">
-    <div class="container">
-      <h2 class="mb-4">Admin Dashboard Preview</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <h4>Total Users</h4>
-          <p><strong>125</strong> registered users</p>
-        </div>
-        <div class="col-md-6">
-          <h4>Pending Messages</h4>
-          <p><strong>18</strong> unread contact requests</p>
-        </div>
+
+      <div class="mb-3">
+        <input class="form-control" type="email" name="email" placeholder="Your Email" required />
       </div>
-      <p class="mt-4">(Full admin panel with login, chart.js dashboard & blog controls can be developed in backend)</p>
-    </div>
-  </section>  <!-- About Section -->  <section id="about" class="bg-white">
-    <div class="container text-center">
-      <h2>About Us</h2>
-      <p class="lead">We are a team of passionate developers and marketers helping businesses grow with the power of technology.</p>
-    </div>
-  </section>  <!-- Contact Section -->  <section id="contact" class="text-center">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form class="row g-3 justify-content-center" onsubmit="return handleSubmit(event)">
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Your Name" required />
-        </div>
-        <div class="col-md-6">
-          <input type="email" class="form-control" placeholder="Your Email" required />
-        </div>
-        <div class="col-md-12">
-          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-        <div class="col-md-12">
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </div>
-      </form>
-    </div>
-  </section>  <!-- Footer -->  <footer class="text-center py-3">
-    <p class="mb-0">&copy; 2025 SunCyberTech. All rights reserved.</p>
-  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  <script>
-    function handleSubmit(event) {
-      event.preventDefault();
-      alert('Thank you for contacting us! We will get back to you shortly.');
-      event.target.reset();
-      return false;
-    }
-  </script></body>
-  </html>
+
+      <div class="mb-3">
+        <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+      </div>
+
+      <button class="btn btn-warning btn-lg" type="submit">Send Message</button>
+    </form>
+
+    <p class="mt-3 text-light">Powered by Web3Forms</p>
+  </div>
+</section>
+
+<footer class="text-center p-4 mt-4">
+  <p>© 2025 Mukesh Murugavel | Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
